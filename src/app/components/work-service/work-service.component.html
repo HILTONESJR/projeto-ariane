@@ -1,0 +1,23 @@
+<div class="service-container">
+  <div class="service-title">
+    <h1 class="bould">Serviços</h1>
+  </div>
+  <section class="service-work">
+    @defer(on viewport) {
+    <div class="service-one" [@fadeInLeft]>
+      <img src="/assets/img/cerebro1.png" alt="cerebro" />
+      <p>Psicoterapia Individual - Online</p>
+    </div>
+
+    <div class="service-two" [@fadeInRight]>
+      <img src="/assets/img/aperto-maos.png" alt="aperto-de-maos" />
+      <p>Acolhimento Psicológico - Online</p>
+    </div>
+    }@placeholder {
+    <div class="placehoulder"></div>
+    }
+  </section>
+  <div class="bt-saiba-mais">
+    <app-bt-service-work />
+  </div>
+</div>

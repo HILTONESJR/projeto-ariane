@@ -1,0 +1,83 @@
+.service-container {
+  display: flex;
+  flex-direction: column;
+
+  background-color: pink;
+}
+.service-work {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.service-title {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+  color: #a85656;
+}
+.service-one {
+  width: 40%;
+  height: 200px;
+  padding: 10px;
+  font-size: 2rem;
+  color: black;
+  text-align: center;
+  background-color: white;
+  margin-bottom: 5%;
+  box-shadow: 6px 8px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 6px 8px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 6px 8px 5px 0px rgba(0, 0, 0, 0.75);
+  opacity: 0; /* Começa invisível */
+  transform: translateX(-100%); /* Começa fora da tela, à esquerda */
+  animation: fadeInFromLeft 2s forwards; /* Aplica a animação de fade-in da esquerda */
+}
+@keyframes fadeInFromLeft {
+  0% {
+    opacity: 0; /* Começa invisível */
+    transform: translateX(-100%); /* Começa fora da tela à esquerda */
+  }
+  100% {
+    opacity: 1; /* Fica totalmente visível */
+    transform: translateX(0); /* Chega à posição original */
+  }
+}
+.service-one img {
+  width: 100px;
+  height: 100px;
+}
+.service-two {
+  width: 40%;
+  height: 200px;
+  padding: 10px;
+  font-size: 2rem;
+  color: black;
+  background-color: white;
+  text-align: center;
+  margin-bottom: 5%;
+  box-shadow: 6px 8px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 6px 8px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 6px 8px 5px 0px rgba(0, 0, 0, 0.75);
+  opacity: 0; /* Começa invisível */
+  transform: translateX(100%); /* Começa fora da tela, à direita */
+  animation: fadeInFromRight 2s forwards; /* Aplica a animação de fade-in da direita */
+}
+@keyframes fadeInFromRight {
+  0% {
+    opacity: 0; /* Começa invisível */
+    transform: translateX(100%); /* Começa fora da tela à direita */
+  }
+  100% {
+    opacity: 1; /* Fica totalmente visível */
+    transform: translateX(0); /* Chega à posição original */
+  }
+}
+.service-two img {
+  width: 100px;
+  height: 100px;
+}
+.bt-saiba-mais {
+  text-align: center;
+}

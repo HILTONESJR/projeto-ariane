@@ -1,0 +1,34 @@
+.animation {
+  animation: alerta 1.5s infinite;
+}
+.botao {
+  background: #a85656;
+  color: white;
+  border: 1px solid white;
+  font-size: 16px;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.623);
+  display: inline-block;
+  text-align: center;
+  width: 180px;
+  height: 55px;
+  border-radius: 5px;
+  line-height: 55px;
+  text-decoration: none;
+  transition: background, padding 500ms ease-in-out;
+}
+@keyframes alerta {
+  0% {
+    transform: scale();
+  }
+  70% {
+    transform: scale();
+    box-shadow: 0 0 0 30px rgba(250, 250, 250, 0);
+  }
+  100% {
+    transform: scale();
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
+@media screen and (min-width: 128px) and (max-width: 900px) {
+}

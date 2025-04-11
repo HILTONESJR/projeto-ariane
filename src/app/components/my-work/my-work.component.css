@@ -1,0 +1,98 @@
+.mywork-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: url(/assets/img/cachoeira.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 200px;
+  height: 200px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card span {
+  font-size: 11px;
+  padding: 20px 10px;
+
+  text-align: center;
+}
+.card img {
+  width: 80px;
+  height: 80px;
+  margin-top: 15px;
+}
+#card1 {
+  opacity: 0; /* Começa invisível */
+  transform: translateX(-100%); /* Começa fora da tela, à esquerda */
+  animation: fadeInFromLeft 2s forwards;
+}
+@keyframes fadeInFromLeft {
+  0% {
+    opacity: 0; /* Começa invisível */
+    transform: translateX(-100%); /* Começa fora da tela à esquerda */
+  }
+  100% {
+    opacity: 1; /* Fica totalmente visível */
+    transform: translateX(0); /* Chega à posição original */
+  }
+}
+#card2 {
+  opacity: 0; /* Começa invisível */
+  transform: translateY(-100%); /* Começa fora da tela, acima */
+  animation: fadeInFromTop 2s forwards;
+}
+@keyframes fadeInFromTop {
+  0% {
+    opacity: 0; /* Começa invisível */
+    transform: translateY(-100%); /* Começa fora da tela, acima */
+  }
+  100% {
+    opacity: 1; /* Fica totalmente visível */
+    transform: translateY(0); /* Chega à posição original */
+  }
+}
+#card3 {
+  opacity: 0; /* Começa invisível */
+  transform: translateY(100%); /* Começa fora da tela, abaixo */
+  animation: fadeInFromBottom 2s forwards;
+}
+@keyframes fadeInFromBottom {
+  0% {
+    opacity: 0; /* Começa invisível */
+    transform: translateY(100%); /* Começa fora da tela, abaixo */
+  }
+  100% {
+    opacity: 1; /* Fica totalmente visível */
+    transform: translateY(0); /* Chega à posição original */
+  }
+}
+#card4 {
+  opacity: 0; /* Começa invisível */
+  transform: translateY(-100%); /* Começa fora da tela, acima */
+  animation: fadeInFromTop 2s forwards;
+}
+
+#card5 {
+  opacity: 0; /* Começa invisível */
+  transform: translateX(100%); /* Começa fora da tela, à direita */
+  animation: fadeInFromRight 2s forwards;
+}
+@keyframes fadeInFromRight {
+  0% {
+    opacity: 0; /* Começa invisível */
+    transform: translateX(100%); /* Começa fora da tela à direita */
+  }
+  100% {
+    opacity: 1; /* Fica totalmente visível */
+    transform: translateX(0); /* Chega à posição original */
+  }
+}

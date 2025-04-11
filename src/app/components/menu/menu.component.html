@@ -1,0 +1,26 @@
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-3 col-3">
+        <div class="container-logo">
+          <img src="/assets/img/logo-bg.png" alt="logo" class="logo" />
+        </div>
+      </div>
+      <div class="col-md-9 col-sm-9 col-9 text-end">
+        <div class="menu-icon" (click)="openMenu()">
+          <i class="{{ menu_icon }}"></i>
+        </div>
+        <div class="desktop_menu" [class.mobile_menu]="menuValue">
+          <ul>
+            <li (click)="closeMenu()">HOME</li>
+            <li (click)="closeMenu()">SOBRE MIM</li>
+            <li (click)="closeMenu()">SERVIÇOS</li>
+            <li (click)="closeMenu()">
+              <app-bt-consulta />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
