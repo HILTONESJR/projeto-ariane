@@ -1,16 +1,17 @@
 header {
-  padding: 10px;
   background-color: pink;
 }
 .logo {
-  width: 150px;
-  height: 70px;
+  width: 300px;
+  height: 150px;
 }
 .logo:hover {
   cursor: pointer;
 }
 .desktop_menu {
-  margin-top: 24px;
+  display: flex;
+  justify-content: right;
+  margin-top: 5%;
 }
 .desktop_menu ul {
   margin: 0;

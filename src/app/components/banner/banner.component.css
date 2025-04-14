@@ -1,10 +1,11 @@
 .container-banner {
   width: 100%;
-  background-image: url(/assets/img/atendimento-psicologico.jpg);
+  background-image: url(/assets/img/banner-2.0.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: center;
   background-size: cover;
-  border: 1px solid pink;
+  border: 1px solid rgba(219, 219, 219, 0);
 }
 .banner-text {
   display: flex;
@@ -16,13 +17,14 @@
   color: white;
 }
 .banner-text h1 {
-  width: 70%;
+  width: 75%;
   font-family: cursive;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .banner-text p {
-  margin-bottom: 2rem;
+  margin-bottom: 7rem;
 }
 .banner-link {
   margin-bottom: 5%;
